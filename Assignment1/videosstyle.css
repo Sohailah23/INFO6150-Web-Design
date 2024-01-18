@@ -1,0 +1,19 @@
+html{
+    background-image: url(images/allbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.videostyle{
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: white;
+}

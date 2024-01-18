@@ -1,0 +1,38 @@
+html{
+    background-image: url(images/allbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    padding: 20px 40px 20px 40px;
+    background-color: gray;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+body p{
+    color: white;
+    text-align: center;
+}
