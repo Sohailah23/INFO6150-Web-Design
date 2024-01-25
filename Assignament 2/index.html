@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" type="img" href="Images/download.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5a31db682.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <video width="1550" height="100" controls>
+    <source src="Images/VID1.mp4" type="video/mp4">
+  </video>
+
+
+<div id="header">
+<div class="container"> 
+    <nav>
+        
+        <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-compass" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Web Designer</p>
+        <h1>Hi, I'm <span>Sohail</span><br>Ahmed From India.</h1>
+    </div>
+</div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/cali.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    An experienced web designer with over 5 years of crafting visually stunning and user-centric websites. My design approach emphasizes the fusion of aesthetics and functionality to deliver seamless online experiences. Join me on this creative journey as we explore the ever-evolving world of web design together. Let's turn ideas into captivating online realities!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Webpage</span><br>Designing webpages</li>
+                        <li><span>Application</span><br>Building Android/iOS apps</li>
+                        <li><span>Website</span><br>Designing web interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Designing Traning</li>
+                        <li><span>2021 - 2022</span><br>Developer at Wipro India</li>                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Course</th>
+                                <th>University</th>
+                                <th>Graduation Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>Course</td>
+                                <td>Acharya Institute of Technology</td>
+                                <td>2021</td>
+                            </tr>
+                            <tr>
+                                <td>M.S.</td>
+                                <td>Information Systems</td>
+                                <td>Northeastern University</td>
+                                <td>2025</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>We create stunning, user-friendly websites tailored to your brand, driving growth and engagement.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Application Design</h2>
+            <p>Crafting intuitive and visually appealing mobile and web applications for a seamless user experience.</p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h2>Website Design</h2>
+            <p>We build beautiful and functional websites to help your business thrive online.</p>
+            <a href="#">learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="Images/Webpage.jpg">
+                <div class="layer">
+                    <h3>Profile Page</h3>
+                    <p>Creating a compelling and user-friendly profile page that showcases your identity and accomplishments.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Application.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> Crafting engaging and interactive social platforms to connect people worldwide.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/WebSite.jpg">
+                <div class="layer">
+                    <h3>Ecommers Website</h3>
+                    <p>Building robust online stores for seamless shopping experiences and increased sales.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sohailcontact@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>+1(234)-567-891</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/noorul-huda-sohail-ahmed/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="Images/1.pdf" Download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Yoru Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-skull-crossbones"></i>....copyright © Sohail better watch..<i class="fa-solid fa-eye"></i>..your self</p>
+    </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeny.style.right = "0";
+    }
+    function closemenu(){
+      sidemeny.style.right = "-200px";
+    }
+
+
+</script>
+</body>
+</html>
