@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h3>Noorul_Huda_Sohail_Ahmed_002875983</h3>
+    <table id="stdTable">
+        <tr>
+            <th></th>
+            <th>STUDENT</th>
+            <th>ADVISOR</th>
+            <th>AWARD STATUS</th>
+            <th>SEMESTER</th>
+            <th>TYPE</th>
+            <th>BUDGET #</th>
+            <th>PERCENTAGE</th>
+            <th>DELETE</th>
+            <th>EDIT</th>
+        </tr>
+           <tr>
+            <td><input type="checkbox" /><br /><br /><img onClick="showRow(this)" src="down.png" width="25px" /></td>
+            <td>Student 1</td>
+            <td>Teacher 1</td>
+            <td>Approved</td>
+            <td>Fall</td>
+            <td>TA</td>
+            <td>12121</td>
+            <td>100%</td>
+            <td></td>
+            <td></td>
+           </tr>
+        <tr class="dropDownTextArea">
+            <td colspan="8">
+                Advisor:<br /><br />
+                Award Details<br />
+                Summer 1-2014(TA)<br />
+                Budget Number: <br />
+                Tuition Number: <br />
+                Comments:<br /><br /><br />
+                Award Status:<br /><br /><br />
+            </td>
+        </tr>
+          <tr>
+            <td><input type="checkbox" /><br /><br /><img onClick="showRow(this)" src="down.png" width="25px" /></td>
+            <td>Student 2</td>
+            <td>Teacher 2</td>
+            <td>Approved</td>
+            <td>Fall</td>
+            <td>TA</td>
+            <td>23232</td>
+            <td>100%</td>
+            <td></td>
+            <td></td>
+         </tr>
+        <tr class="dropDownTextArea">
+            <td colspan="8">
+                Advisor:<br /><br />
+                Award Details<br />
+                Summer 1-2014(TA)<br />
+                Budget Number: <br />
+                Tuition Number: <br />
+                Comments:<br /><br /><br />
+                Award Status:<br /><br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /><br /><br /><img onClick="showRow(this)" src="down.png" width="25px" /></td>
+            <td>Student 3</td>
+            <td>Teacher 3</td>
+            <td>Approved</td>
+            <td>Fall</td>
+            <td>TA</td>
+            <td>34343</td>
+            <td>100%</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dropDownTextArea">
+            <td colspan="8">
+                Advisor:<br /><br />
+                Award Details<br />
+                Summer 1-2014(TA)<br />
+                Budget Number: <br />
+                Tuition Number: <br />
+                Comments:<br /><br /><br />
+                Award Status:<br /><br /><br />
+            </td>
+        </tr>
+    </table>
+
+    <br /><br />
+
+    <button id="button">Submit Selected Awards</button>
+    <button id="add" onClick="addRow()">Add New Student</button>
+
+    <script src="sript.js"></script>
+
+</body>
+
+</html>
