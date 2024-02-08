@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+
+	  #error_firstName, #error_lastName, #error_emailId, #error_phoneNumber,
+	  #error_streetAddress1, #error_city, #error_state, #error_zipcode
+	  {
+		padding: 3px;
+		color: rgb(245, 31, 31);
+		display: none;
+		
+	  }
+
+	  #txtbox{
+		display: none;
+	  }
+
+	  #result {
+		max-width: 100%;
+		display: none;
+	  }
+
+	  table, th, tr, td {
+		padding: 5px;
+		margin: auto;
+		border-collapse: collapse;
+		border: 2px solid black;
+	  }
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" id="myForm">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" required/>	
+			<br><br>
+			
+			<div id="error_firstName">
+				Please enter a valid first name!
+			</div>
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
+			<br><br>
+			
+			<div id="error_lastName">
+				Please enter a valid last name!
+			</div>
+
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required/>
+			<br><br>
+			
+			<div id="error_emailId">
+				Please enter a valid Email ID!
+			</div>
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required/>
+			<br><br>
+
+			<div id="error_phoneNumber">
+				Please enter a valid phone number!
+			</div>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+			<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" required/>
+			<br><br>
+
+			<div id="error_streetAddress1">
+				Please enter Street Address!
+			</div>
+
+			<label for="streetAddress2">Street Address 2:</label>
+			<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address"/>
+			<br><br>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="city" required/>
+			<br><br>
+
+			<div id="error_city">
+				Please enter valid city name!
+			</div>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" required/>
+			<br><br>
+
+			<div id="error_state">
+				Please enter valid state name!
+			</div>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required/>
+			<br><br>
+
+			<div id="error_zipcode">
+				Please enter valid zipcode!
+			</div>
+
+			<label for="drinks">Select a drink*:</label>
+			<select id="drinks" onchange="selectSize()" required>
+				<option value="none" selected disabled hidden>Select a drink</option>
+				<option value="Latte">Latte</option>
+				<option value="Cappuccino">Cappuccino</option>
+				<option value="Espresso">Espresso</option>
+				<option value="Iced Tea">Iced Tea</option>
+				<option value="Tea">Tea</option>
+			</select>
+			<br><br>
+
+			<div id="checkbox"></div>
+			<br>
+			<textarea id="txtbox" name="txtbox" placeholder="Additional instructions" rows="3" cols="30"></textarea>
+			<br>
+			
+             
+            <label for="zipcode">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+			<br><br>
+			<input type="Submit">
+			<input type="Reset">
+			<br><br>
+		 </form>
+		 
+	 </main>
+ </div>
+
+ <div id="result">
+	<table id="myTable">
+		<th>Title</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email Id</th>
+		<th>Phone Number</th>
+		<th>StreetAddress 1</th>
+		<th>StreetAddress 2</th>
+		<th>City</th>
+		<th>State</th>
+		<th>ZipCode</th>
+		<th>Selected Drink</th>
+		<th>Size</th>
+		<th>Instructions</th>
+		<th>How did you hear</th>
+		<th>Comments</th>
+	</table>
+</div>
+
+ <script src="script.js">
+ 
+ </script>
+
+ </body>
+</html>
