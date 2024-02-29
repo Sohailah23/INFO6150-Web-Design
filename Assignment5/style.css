@@ -1,0 +1,98 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --highlight-color: rgb(103, 33, 33);
+  --menu-border-color: black;
+  --menu-bg-color: beige;
+  --menu-hover-bg-color: black;
+  --menu-hover-text-color: white;
+  --body-font-size: 15px;
+  --menu-padding: 20px;
+}
+
+.container {
+  cursor: pointer;
+  padding-left: 1%;
+}
+
+.menustyle a {
+  color: var(--secondary-color);
+}
+
+.menustyle a:hover {
+  color: var(--highlight-color);
+}
+
+header {
+  background-image: url("Images/coffee_1stimg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 10px;
+  padding-bottom: 50%;
+}
+
+#Heading {
+  margin-top: 20%;
+}
+
+.hamburgerBar {
+  width: 35px;
+  height: 5px;
+  background-color: var(--primary-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+body {
+  text-align: center;
+  font-size: var(--body-font-size);
+}
+
+#quote {
+  font-family: "Great+Vibes", "Brush Script MT";
+  font-size: 40px;
+}
+
+#coldcimage {
+  width: 80%;
+}
+
+#Contact,
+#About {
+  margin: auto 5%;
+  margin-top: 5%;
+}
+
+table {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  padding: 20px 40px;
+}
+
+#Menu {
+  margin: 50px 50px;
+}
+
+.menu1 {
+  border: var(--menu-border-color) solid 3px;
+  padding: var(--menu-padding); 
+  background-color: var(--menu-bg-color);
+}
+
+.menu1:hover {
+  background-color: var(--menu-hover-bg-color);
+  color: var(--menu-hover-text-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+

@@ -1,0 +1,20 @@
+table{
+     margin:5% auto;
+}
+
+body{
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:black;
+}
+
+td, th{
+  padding-left: 70px; 
+  padding-right: 70px;
+}
+
+th{
+    padding-bottom: 25px;
+    text-decoration: underline;
+}

@@ -1,0 +1,97 @@
+//variable and custom property
+$primaryBtn : black;
+.container {
+    padding-left: 1%;
+  }
+
+  header{
+    background-image: url("Images/7c09e1ac8eeeeb2591950f1bc67f213b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 10px;
+    padding-bottom: 50%;
+        }
+  
+        #Heading{
+            margin-top: 20% ;
+        }
+
+  .hamburgerBar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+body{
+    text-align: center ;
+    
+    font-size: 15px;
+    
+}
+
+
+#quote{
+    font-family: 'Great+Vibes', 'Brush Script MT';
+    font-size: 20px;
+  
+}
+
+// placeholder
+#Contact %other {
+    margin: auto 5%;
+    margin-top: 5%;
+}
+
+#About{
+    //inheritance
+    @extend %other;
+}
+
+table{
+    align-self: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th{
+    
+    padding: 20px 40px;
+}
+
+//variable
+$b: "background"; 
+
+.menu1 {
+    border: black solid 3px;
+    padding: 20px;
+    #{$b}-color: lighten(gray, 45%); //interpolation
+    &:hover{
+        #{$b}-color: $primaryBtn; //interpolation
+        color: White;
+    }
+}
+
+#Menu{
+    margin: 50px 50px;
+}
+
+#coldcimage{
+    width:80%;
+}
+
+a{
+    cursor: pointer;
+}
+
+//function and conditional statements
+@function set-text-color($bcolor) {
+    @if(lightness($bcolor) > 30) {
+        @return $light-color;
+    }
+    @else {
+        @return white;
+    }
+}
