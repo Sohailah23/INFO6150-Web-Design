@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login Page</h1>
+        <form id="loginForm" action="welcome.html">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <div class="emailError" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName">
+                <div class="userNameError" id="userNameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <div class="passwordError" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <div class="confirmPasswordError" id="confirmPasswordError"></div>
+            </div>
+            <button type="submit" class="disabled" id="loginButton" >Login</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="check.js"></script>
+</body>
+</html>

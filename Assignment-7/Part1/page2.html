@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Page</title>
+
+    <style>
+    body {
+        background-image: url('back.jpg');
+        background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+
+    .result label {
+      
+        font-weight: bold;
+    }
+
+    input#result {
+        max-width: 400px;
+        background-color: #f0f0f0;
+        border: none;
+    }
+
+    button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1>Welcome, <span id="userNameDisplay"></span></h1>
+        <form id="calculationForm">
+            <div class="form-group">
+                <label for="number1">Number 1:</label>
+                <input type="text" id="number1" name="number1">
+                <span id="number1Error" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="number2">Number 2:</label>
+                <input type="text" id="number2" name="number2">
+                <span id="number2Error" class="error"></span>
+            </div>
+            <div class="result">
+                <label for="result">Result:</label>
+                <input type="text" id="result" readonly>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <button type="button" class="calculation-button disabled" data-operation="add">Add</button>
+                <button type="button" class="calculation-button disabled" data-operation="subtract">Subtract</button>
+                <button type="button" class="calculation-button disabled" data-operation="multiply">Multiply</button>
+                <button type="button" class="calculation-button disabled" data-operation="divide">Divide</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="page2.js"></script>
+</body>
+</html>
